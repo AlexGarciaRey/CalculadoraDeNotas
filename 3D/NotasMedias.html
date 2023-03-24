@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <style>
+input:invalid {
+box-shadow: none;
+}
+
+    body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-image: url("Walpaper.jpg");
+
+}
+
+.container {
+width: 90%;
+margin: auto;
+}
+
+h1 {
+text-align: center;
+margin: 20px 0;
+}
+
+form {
+background-color: #F2F2F2;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+margin-bottom: 30px;
+}
+
+.notas {
+margin-bottom: 20px;
+}
+
+label, input {
+display: block;
+margin: 10px 0;
+}
+
+input {
+padding: 10px;
+border: none;
+background-color: #FFFFFF;
+border-radius: 5px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+button {
+background-color: #001eff;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin: 10px 5px;
+}
+
+button:hover {
+background-color: #3E8E41;
+}
+
+button:active {
+background-color: #4CAF50;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+}
+
+#resultado {
+background-color: #F2F2F2;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+text-align: center;
+margin-bottom: 30px;
+font-size: 20px;
+font-weight: bold;
+}
+</style>
+    </style>
+    <head>
+        <title bgcolor="##FFFF00">Calculadora de media</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculadora de media</h1>
+            <form id="formulario">
+                <div id="notas" class="notas">
+                    <label for="nota1">Nota 1:</label>
+                    <input type="number" class="nota" required><br>
+                </div>
+
+                <button id="agregarNota" type="button">Agregar nota</button>
+                <button id="calcularMedia" type="submit">Calcular media</button>
+            </form>
+
+            <div id="resultado"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
